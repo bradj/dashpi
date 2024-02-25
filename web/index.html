@@ -6,8 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DashPi</title>
   </head>
-  <body class="bg-cover object-none" style="background-image: url('/backgrounds/alps-8345488_1920.jpg');">
+  <body class="bg-cover object-none" style="background-color: #222">
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      const body = document.querySelector('body');
+      const bgs = [
+        '/backgrounds/alps-8345488_1920.jpg',
+        '/backgrounds/beach-4161593_1920.jpg',
+        '/backgrounds/boat-5889919_1920.png',
+        '/backgrounds/cathedral-8393260_1920.jpg',
+        '/backgrounds/christmas-4701783_1920.png',
+        '/backgrounds/colorful-2174045_1920.png',
+        '/backgrounds/copenhagen-8513129_1920.jpg',
+        '/backgrounds/dare-7923106_1920.jpg',
+        '/backgrounds/defile-8495836_1920.jpg',
+        '/backgrounds/fantasy-571956_1920.jpg',
+        '/backgrounds/field-1728099_1920.jpg',
+        '/backgrounds/lake-6260668_1920.png',
+        '/backgrounds/mandalas-1084082_1920.jpg',
+        '/backgrounds/mountain-8517546_1920.jpg',
+        '/backgrounds/mountains-1587287_1920.jpg',
+        '/backgrounds/universe-2742113_1920.jpg',
+        '/backgrounds/watercolor-5062356_1920.jpg',
+      ];
+
+      let idx = Math.floor(Math.random() * bgs.length);
+
+      function setBg(n) {
+        body.style = '';
+        body.style.backgroundImage = `url(${bgs[n]})`;
+      }
+
+      setBg(idx % bgs.length);
+
+      setInterval(() => {
+        setBg(idx++ % bgs.length)
+      }, 120*1000);
+    </script>
   </body>
 </html>
