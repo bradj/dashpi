@@ -34,6 +34,11 @@ export const useServiceStore = defineStore('service', () => {
           url: 'https://www.hulu.com/series/7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
           image: '/artwork/65c46306b96cf.jpg',
           title: "Abbott Elementary"
+        },
+        {
+          url: 'https://www.hulu.com/series/3a2b19ac-5717-4185-aa71-a229971d2c0b',
+          image: '/artwork/657759f4a992c.jpg',
+          title: "Married at First Sight"
         }
       ]
     },
