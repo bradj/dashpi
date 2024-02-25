@@ -3,7 +3,8 @@ import { defineStore } from "pinia";
 export type Service = {
   name: string,
   logo: string,
-  items: ServiceItem[]
+  enabled: boolean,
+  items: ServiceItem[],
 }
 
 export type ServiceItem = {
@@ -17,6 +18,7 @@ export const useServiceStore = defineStore('service', () => {
     {
       name: 'Hulu',
       logo: '/logos/hulu-Green-digital.svg',
+      enabled: true,
       items: [
         {
           url: 'https://www.hulu.com/series/fdeb1018-4472-442f-ba94-fb087cdea069',
@@ -27,12 +29,18 @@ export const useServiceStore = defineStore('service', () => {
           url: 'https://www.hulu.com/series/374cdbc2-3b08-4b81-a68f-a45a70665849',
           image: '/artwork/6142120103f05.jpg',
           title: "The Great North"
+        },
+        {
+          url: 'https://www.hulu.com/series/7c33eeb2-5d16-4a10-ad9e-ee31f9fff15c',
+          image: '/artwork/65c46306b96cf.jpg',
+          title: "Abbott Elementary"
         }
       ]
     },
     {
       name: 'Netflix',
       logo: '/logos/Netflix_Logo_RGB.png',
+      enabled: true,
       items: [
         {
           url: 'https://www.netflix.com/browse?jbv=70155589',
@@ -69,6 +77,7 @@ export const useServiceStore = defineStore('service', () => {
     {
       name: 'HBO Max',
       logo: '/logos/Max_logo.svg',
+      enabled: true,
       items: [
         {
           url: 'https://play.max.com/movie/0bbe998a-23b8-49a2-9729-976d53af74be',
@@ -105,6 +114,7 @@ export const useServiceStore = defineStore('service', () => {
     {
       name: 'Disney Plus',
       logo: '/logos/Disney_Plus_logo.svg',
+      enabled: true,
       items: [
         {
           url: 'https://www.disneyplus.com/series/bluey/1xy9TAOQ0M3r',
@@ -121,6 +131,7 @@ export const useServiceStore = defineStore('service', () => {
     {
       name: 'Crunchyroll',
       logo: '/logos/Crunchyroll_2018_II.svg',
+      enabled: true,
       items: [
         {
           url: 'https://www.crunchyroll.com/attack-on-titan',
@@ -167,6 +178,7 @@ export const useServiceStore = defineStore('service', () => {
     {
       name: 'PBS',
       logo: '/logos/PBS.svg',
+      enabled: true,
       items: [
         {
           url: 'https://www.pbs.org/show/hotel-portofino/',
@@ -193,6 +205,7 @@ export const useServiceStore = defineStore('service', () => {
     {
       name: 'Amazon Prime Video',
       logo: '/logos/prime-0.png',
+      enabled: false,
       items: [
         {
           title: "Blah",
