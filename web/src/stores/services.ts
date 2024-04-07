@@ -76,6 +76,16 @@ export const useServiceStore = defineStore('service', () => {
           url: "https://www.netflix.com/browse?jbv=80237957",
           image: "/artwork/65aeb86ad8b6a.jpg",
           title: "Avatar: The Last Airbender (2024)"
+        },
+        {
+          url: "https://www.netflix.com/browse?jbv=80232398",
+          image: "/artwork/625300b76b361.jpg",
+          title: "Bridgerton"
+        },
+        {
+          url: "https://www.netflix.com/browse?jbv=80996601",
+          image: "/artwork/62072350.jpg",
+          title: "Love is Blind and Stupid"
         }
       ]
     },
@@ -177,6 +187,21 @@ export const useServiceStore = defineStore('service', () => {
           url: 'https://www.crunchyroll.com/series/GRE50KV36/black-clover',
           image: '/artwork/64c2cd7d875f8.jpg',
           title: 'Black Clover'
+        },
+        {
+          url: "https://www.crunchyroll.com/series/GVDHX8QNW/chainsaw-man",
+          image: '/artwork/62f8c21e4ea83.jpg',
+          title: 'Chainsaw Man'
+        },
+        {
+          url: "https://www.crunchyroll.com/series/GG5H5X3DE/buddy-daddies",
+          image: '/artwork/6378ea2f88e3e.jpg',
+          title: 'Buddy Daddies'
+        },
+        {
+          url: "https://www.crunchyroll.com/series/G4PH0WXVJ/spy-x-family",
+          image: '/artwork/622527d8f031d.jpg',
+          title: 'Spy x Family'
         }
       ]
     },

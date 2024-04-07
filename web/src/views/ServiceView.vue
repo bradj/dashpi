@@ -74,7 +74,7 @@ const hanelKeyup = (e: KeyboardEvent) => {
 </script>
 
 <template>
-  <div class="m-auto mt-20 w-4/5 grid grid-cols-4 gap-10">
+  <div class="m-auto mt-4 w-4/5 grid grid-cols-2 gap-2 md:mt-20 md:grid-cols-4 md:gap-10">
       <div class="h-96 text-center cursor-pointer"
         v-for="item, idx in svc.items" :key="item.title">
         <a :href="item.url" 
