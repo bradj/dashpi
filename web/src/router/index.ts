@@ -13,6 +13,17 @@ const router = createRouter({
       path: '/services/:id',
       name: 'service',
       component: () => import('../views/ServiceView.vue')
+    },
+    {
+      path: '/:pathMatch(.*)*', // 404
+      redirect: to => {
+        // the function receives the target route as the argument
+        // we return a redirect path/location here.
+        return {
+          name: 'home',
+          query: { q: to.path }
+        }
+      },
     }
   ]
 })
