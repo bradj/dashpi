@@ -76,7 +76,11 @@ const handleKeyup = (e: KeyboardEvent) => {
   } else if (e.key === 'Escape') {
     selectedIdx.value = 0
   } else if (e.key === 'Enter' || e.key === ' ') {
-    router.push({ name: 'service', params: { id: props.items[selectedIdx.value].url } })
+    if (props.routeLinks) {
+      router.push({ name: 'service', params: { id: props.items[selectedIdx.value].url } })
+    } else {
+      window.location.href = props.items[selectedIdx.value].url
+    }
   }
 }
 </script>
