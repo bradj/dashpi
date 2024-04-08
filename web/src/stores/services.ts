@@ -95,6 +95,11 @@ export const useServiceStore = defineStore('service', () => {
       enabled: true,
       items: [
         {
+          url: "https://play.max.com/show/1bc3aff5-0d6a-4c0b-8ed0-5716ca30ab3b",
+          image: '/artwork/79126-2.jpg',
+          title: "The Wire"
+        },
+        {
           url: 'https://play.max.com/movie/0bbe998a-23b8-49a2-9729-976d53af74be',
           image: '/artwork/653b347a88747.jpg',
           title: 'The Color Purple'
